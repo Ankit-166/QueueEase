@@ -1,36 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:background="#F5F7FA">
+    android:fillViewport="true"
+    android:background="?attr/colorSurface">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="NOW SERVING"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="#1565C0"/>
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
 
-    <TextView
-        android:id="@+id/txtCurrentToken"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="--"
-        android:textStyle="bold"
-        android:textSize="60sp"
-        android:textColor="#2563EB"/>
+        <!-- Monitor Icon Badge -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="0dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:cardBackgroundColor="?attr/colorPrimaryContainer">
 
-    <TextView
-        android:id="@+id/txtStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Status : Waiting"
-        android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🖥"
+                android:textSize="36sp"
+                android:layout_gravity="center" />
+        </com.google.android.material.card.MaterialCardView>
 
-</LinearLayout>
+        <!-- NOW SERVING Section Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="NOW SERVING"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:letterSpacing="0.15"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center" />
+
+        <!-- Counter Board Display Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="?attr/colorPrimary"
+            app:cardBackgroundColor="#0F172A">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="36dp"
+                android:gravity="center">
+
+                <!-- Currently Serving Token -->
+                <TextView
+                    android:id="@+id/txtCurrentToken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textStyle="bold"
+                    android:textSize="80sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#00E5FF" />
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="16dp"
+                    android:background="#1E293B" />
+
+                <!-- Status View -->
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status : No Token Serving"
+                    android:textColor="#94A3B8"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Footer Call-to-Action Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔔 Please proceed to the designated counter when called."
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
