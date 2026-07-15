@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1565C0"/>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Total Tokens : 0"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtWaiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Waiting : 0"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtServing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Serving : 0"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtServed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Served : 0"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Token"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/btnServed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark Served"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear History"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

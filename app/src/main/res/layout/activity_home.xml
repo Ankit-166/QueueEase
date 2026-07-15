@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QueueEase"
+            android:textColor="#1565C0"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Smart Digital Queue System"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnGenerateToken"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#2563EB"
+                android:text="🎫  Generate Token"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnCurrentQueue"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#2563EB"
+                android:text="📊  Current Queue"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#2563EB"
+                android:text="📜  Queue History"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp">
+
+            <Button
+                android:id="@+id/btnAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="#2563EB"
+                android:text="🛠  Admin Panel"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>
